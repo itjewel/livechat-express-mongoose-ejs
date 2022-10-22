@@ -1,0 +1,27 @@
+{
+  "name": "livechat-express-mongoose-ejs",
+  "version": "1.0.0",
+  "description": "Md.Jewel Mia node.js chat applications",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itjewel/livechat-express-mongoose-ejs.git"
+  },
+  "keywords": [
+    "nodeJS",
+    "express",
+    "chat",
+    "application",
+    "ejs",
+    "socket"
+  ],
+  "author": "Md.Jewel Mia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itjewel/livechat-express-mongoose-ejs/issues"
+  },
+  "homepage": "https://github.com/itjewel/livechat-express-mongoose-ejs#readme"
+}
