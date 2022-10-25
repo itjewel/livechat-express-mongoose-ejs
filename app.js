@@ -10,6 +10,9 @@ const {
   errorHandler,
   notFoundHandler,
 } = require("./middlewares/common/errorhandler");
+const loginRouter = require("./router/loginRouter");
+const usersRouter = require("./router/usersRouter");
+const inboxRouter = require("./router/inboxRouter");
 
 const app = express();
 // request process
@@ -34,6 +37,9 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(cookieParser(process.env.COOKIE_SECRET));
 
 // routing setup
+app.use("/", loginRouter);
+app.use("/users", usersRouter);
+app.use("/inbox", inboxRouter);
 
 // 404 not found handeler
 app.use(notFoundHandler);
