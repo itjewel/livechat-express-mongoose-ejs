@@ -24,7 +24,13 @@ dotenv.config();
 // Database Connection
 main().catch((err) => console.log(err));
 async function main() {
-  await mongoose.connect(process.env.MONGOOSE_CONNECTION_STRING);
+  try {
+    await mongoose.connect(process.env.MONGOOSE_CONNECTION_STRING);
+  console.log("db connection success");
+  } catch (error) {
+    console.log("db connection failed");
+  }
+  
 }
 
 // View engine
