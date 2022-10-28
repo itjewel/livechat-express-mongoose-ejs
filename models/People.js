@@ -21,8 +21,8 @@ const peopleSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    avator:{
-        type:String,
+    avatar: {
+      type: String,
     },
     role: {
       type: String,
