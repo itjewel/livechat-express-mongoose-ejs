@@ -1,6 +1,6 @@
-<%- include('./partials/header.ejs'); %>
 <!-- <pre>
 <%= JSON.stringify(users, null, 4) %></pre> -->
+<%- include('./partials/header.ejs'); %>
     <div class="manageUser-container">
       <div id="title">
         <h2>Manage Users</h2>
@@ -9,7 +9,7 @@
       <div class="new-message-container new-user">
         <a href="#" onclick="openModal()">+</a>
       </div>
-     
+
       <div id="users-table">
         <table>
           <thead>
@@ -20,10 +20,7 @@
             </tr>
           </thead>
           <tbody id="users-table">
-            
-            <% users.forEach(function(user) { 
-              <!-- console.log(user) -->
-              %>
+            <% users.forEach(function(user) { %>
               <tr id="<%= user._id %>">
                 <td class="name">
                   <% if (user.avatar) { %>
