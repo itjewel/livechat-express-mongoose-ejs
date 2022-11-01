@@ -33,6 +33,8 @@ async function searchUser(req, res, next) {
 
   try {
     if (searchQuery !== "") {
+      let userId = req.user.userid;
+
       const users = await User.find(
         {
           $or: [
@@ -46,6 +48,7 @@ async function searchUser(req, res, next) {
               email: email_search_regex,
             },
           ],
+          _id: { $ne: userId },
         },
         "name avatar"
       );
