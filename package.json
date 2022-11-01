@@ -1,7 +1,7 @@
 {
   "name": "livechat-express-mongoose-ejs",
   "version": "1.0.0",
-  "description": "Md.Jewel Mia node.js chat applications",
+  "description": "Md.Jewel Mia node.js Elegant Live Chat",
   "main": "app.js",
   "scripts": {
     "start": "NODE_ENV=development nodemon app.js",
